@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Redeemed Nutrition</title>
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Calligraffitti|Playfair+Display|Sedgwick+Ave+Display|Tangerine" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css"> 
+	<!-- jQuery Google CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+ <body>
+  <!-- this div holds the trivia game title, questions, and game stats -->
+  <div class=" jumbotron col-md-8 col-lg-8 col-sm-12 col-xs-12 col-md-offset-2 col-lg-offset-2">
+ <!-- title & start button will be displayed at start of game-->
+    <div id="startPage"> 
+      <h1 class="gameTitle">Redeemed Nutrition Trivia!</h1>
+      <a class="btn btn-primary btn-lg black-background" href="#" role="button">Start</a>
+    </div>
+<!-- the countdown timer will be displayed above the quiz questions after the button is clicked and will remain at the top until the time is up -->
+        <div id="questionPage"> 
+         <h1 class="gameTitle">Redeemed Nutrition Trivia!</h1>
+<!--the user only has a set time to complete the questions. when the timer runs out, the time is up
+ -->      <h3 id="timer">Time Remaining: 60</h3>
+          <form id="nutritionForm">
+          <p>What product brand does Redeemed Nutrition sell?</p>
+            <input type="radio" name="brand" value="wrong"> Advocare&nbsp;&nbsp;
+            <input type="radio" name="brand" value="wrong"> Wraps&nbsp;&nbsp;
+            <input type="radio" name="brand" value="right"> Herbal Life&nbsp;&nbsp;
+            <input type="radio" name="brand" value="wrong"> Medi&nbsp;&nbsp;
+          <br><br>
+           <p>What year did Redeemed Nutrition open?</p>
+            <input type="radio" name="year" value="wrong"> 2017&nbsp;&nbsp;
+            <input type="radio" name="year" value="right"> 2016&nbsp;&nbsp;
+            <input type="radio" name="year" value="wrong"> 2015&nbsp;&nbsp;
+            <input type="radio" name="year" value="wrong"> 2013&nbsp;&nbsp;
+          <br><br>
+           <p>What is their most popular product?</p>
+            <input type="radio" name="product" value="wrong"> protein bars&nbsp;&nbsp;
+            <input type="radio" name="product" value="wrong"> aloe&nbsp;&nbsp;
+            <input type="radio" name="product" value="right"> shakes&nbsp;&nbsp;
+            <input type="radio" name="product" value="wrong"> shampoo&nbsp;&nbsp;
+            <br><br>
+           <p>What is their most popular shake?</p>
+            <input type="radio" name="shake" value="wrong"> strawberry&nbsp;&nbsp;
+            <input type="radio" name="shake" value="wrong"> chocolate&nbsp;&nbsp;
+            <input type="radio" name="shake" value="wrong"> vanilla&nbsp;&nbsp;
+            <input type="radio" name="shake" value="right"> banana caramel&nbsp;&nbsp;
+          <br><br>
+          <p>Which health benefit do they not provide?</p>
+            <input type="radio" name="sell" value="wrong"> digestion&nbsp;&nbsp;
+            <input type="radio" name="sell" value="wrong"> skin care&nbsp;&nbsp;
+            <input type="radio" name="sell" value="wrong"> energy&nbsp;&nbsp;
+            <input type="radio" name="sell" value="right"> plastic surgery&nbsp;&nbsp;
+          <br><br>
+           <p>How many days a week is Fit Camp?</p>
+            <input type="radio" name="days" value="right"> 2 days&nbsp;&nbsp;
+            <input type="radio" name="days" value="wrong"> 5 days&nbsp;&nbsp;
+            <input type="radio" name="days" value="wrong"> 3 days&nbsp;&nbsp;
+            <input type="radio" name="days" value="wrong"> none&nbsp;&nbsp;
+          <br><br>
+           <p>Whoich of the following is not a Fit Camp exercise?</p>
+            <input type="radio" name="exercise" value="right"> snatch &nbsp;&nbsp;
+            <input type="radio" name="exercise" value="wrong"> jumping jacks &nbsp;&nbsp;
+            <input type="radio" name="exercise" value="wrong"> pushups &nbsp;&nbsp;
+            <input type="radio" name="exercise" value="wrong"> squats &nbsp;&nbsp;
+          <br><br>
+            <input class="btn btn-primary black-background white" type="submit" id="button">
+          </form>
+    <!-- the game stats will be displayed once the timer is up -->
+           </div> 
+           <div id="resultsPage"> 
+              <h1 class="gameTitle">Redeemed Nutrition Trivia!</h1>
+              <h3 id="correct">Correct: 0</h3>
+              <h3 id="incorrect">Incorrect: 0</h3>
+              <h3 id="unanswered">Unanswered: 0</h3>
+            </div>
+  <div>
+
+    <!-- Bootstrap JS MaxCDN -->
+ 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Bootstrap latest compiled and minified CSS -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="assets/js/app.js"></script> 
+  </body>
+ </html>

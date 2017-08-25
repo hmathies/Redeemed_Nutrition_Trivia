@@ -1,0 +1,20 @@
+
+  body { 
+	    background-image: url('../images/FitCamp.jpg');
+	   background-size: 100%;
+	    background-attachment: fixed;
+	    background-position: center;
+	   
+	}
+
+	.jumbotron {
+		padding: 40px;
+		margin: 250px; 
+		text-align: center;
+		border-radius: 20px;
+		background: green;
+	}
+
+	.black-background {background-color:#000000;}
+	.white {color:#ffffff;}
+
