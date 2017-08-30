@@ -1,11 +1,17 @@
  /*----when the page loads, the trivia div will be displayed with title and start button only*/
     $(document).ready(function() {
-          var timeRemaining = 60;
+          var timeRemaining = 120;
           var timerId;
           var correct = 0;
           var incorrect = 0;
           var unanswered = 0; 
            
+  // displaying the results to the screen
+          function displayResults () {
+              $("#resultsPage").show();
+              $('#questionPage').hide();
+           }
+
           $("#questionPage").hide();
           $("#resultsPage").hide();
       // when the button is clicked, load the trivia questions and begin countdown timer
@@ -63,7 +69,9 @@
               }
             });
            }
-
+             function clearAnswers() {
+             $('input[type="radio"]').prop("checked", false);
+           } 
            function stop() {
               clearInterval(timerId);
               
@@ -72,7 +80,7 @@
                $('#startPage').hide();
               
               // timerId = setInterval(decrement, 1000);
-              setTimeout(reset,1000*5);
+              setTimeout(reset,1000*30);
               console.log(setTimeout);
            }
            
@@ -82,8 +90,9 @@
               // document.PotterForm.reset();
               clearInterval(timerId);
               console.log('working');
+              clearAnswers();
               // $('#questionPage').clear();
-              timeRemaining = 60;
+              timeRemaining = 120;
               timerId;
               correct = 0;
               incorrect = 0;
